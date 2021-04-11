@@ -1,0 +1,222 @@
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translate(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translate(-1rem)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+html,
+body,
+.cover {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}
+
+
+.cover {
+    background: url(Warmth.JPG) top left no-repeat;
+    background-size: cover;
+    display:table;
+    width: 100%;
+    padding: 0 20%;
+
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+.cover-text {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-family: 'Petit Formal Script', cursive;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    text-align: center;
+    display: block;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 1.5rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+
+   
+a {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+
+a:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: -3px;
+}
+
+nav.navbar-inverse {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+nav.navbar-inverse {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times,  serif;
+}
+.testimonial {
+    background: #222;
+    padding-top: 8rem;
+}
+blockquote {
+    border: none;
+    margin: 0;
+    font-style: italic;
+    font-size: 32px;
+    color: #888;
+}
+blockquote:hover{
+    color:silver;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #888;
+    margin-top: 40px;
+}
+
+section {
+  display: flex;
+}
+
+p {
+    text-align: center;
+    margin-top: -60px;
+}
+
+#bottom,
+.about{
+    background-color: chocolate;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    margin-top: 0;
+    line-height: 2.2rem;
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+
+h3{
+    position: left;
+}
+.col-sm-3,
+.content {
+    flex-basis: 25%;
+}
+span:hover{
+    color:silver;
+}
+.image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 15% 20%;
+}
+
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color:chocolate;
+}
+
+/* Media Queries */
+
+
+
+@media only screen and (max-width : 400px) {
+    .heading-primary-main {
+        font-size: 4rem;
+        text-align: center;
+        margin-right: 25%;
+    }
+    
+   
+   .container,
+   .col-sm-3{
+       display: flex;
+       flex-direction: column;
+   }
+   
+
+}
+
+
+
+
+
