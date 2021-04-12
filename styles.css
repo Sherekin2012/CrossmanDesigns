@@ -36,6 +36,8 @@ body,
     height: 100%;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    color: white;
+
 }
 
 
@@ -44,18 +46,15 @@ body,
     background-size: cover;
     display:table;
     width: 100%;
-    padding: 0 20%;
 
 }
 
 .heading-primary {
-    color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
 }
 .cover-text {
     text-align: center;
-    color: white;
     display: table-cell;
     vertical-align: middle;
 }
@@ -156,7 +155,6 @@ p {
 .about{
     background-color: chocolate;
     background-size: cover;
-    color: white;
     text-align: left;
     margin-top: 0;
     line-height: 2.2rem;
@@ -180,9 +178,12 @@ span:hover{
     border-radius: 50%;
     overflow: hidden;
     margin: 15% 20%;
+    opacity: .85;
 }
 
-
+.image:hover{
+    opacity: 1;
+}
 
 footer {
     background: #222;
